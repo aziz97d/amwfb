@@ -1,0 +1,122 @@
+
+nav{
+    height: 11.5rem;
+    --color-brand : #72A230;
+    border-bottom: var(--color-brand);
+    box-shadow: 0.5rem 0 .5rem var(--color-brand);
+}
+.nav__top{
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10rem;
+    background-color: #F1F1F1;
+}
+.social__part .social-icon{
+    font-size: 1.5rem;
+    padding: 0.2rem 1rem;
+    color: var(--color-brand);
+}
+
+.contact__part{
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+    color: var(--color-brand);
+}
+.contact__part__item{
+    padding: 0.2rem 1rem;
+    display: flex;
+    align-items: center;
+}
+.contact__part__item span{
+    margin-left: .5rem;
+}
+.contact__part button{
+    border:none;
+    background-color: var(--color-brand);
+    color: white;
+    padding: .7rem 1.2rem;
+    cursor: pointer;
+    border-radius: 2rem;
+}
+
+.nav__bottom{
+    padding: 0 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
+}
+.nav__bottom .logo{
+    font-size: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+.nav__bottom .menu{
+    display: flex;
+}
+.nav__bottom input[type='Checkbox']{
+    display: none;
+}
+.nav__bottom .menu-btn{
+    font-size: 2.5rem;
+    display: none;
+}
+.nav__bottom .menu li{
+    list-style: none;
+    padding: 0.2rem 1.2rem;
+}
+.nav__bottom .menu li a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--color-brand);
+    font-weight: 500;
+}
+
+@media (max-width:720px){
+    
+    nav{
+        height: 6rem;
+        padding: 0;
+    }
+    .nav__top{
+        display: none;
+    }
+    
+    .nav__bottom{
+        padding: 0 1.5rem;
+    }
+    .nav__bottom .logo{
+        width: 100%;
+    }
+    .nav__bottom .menu-btn{
+        display: block;
+    }
+    .nav__bottom .menu{
+        position: fixed;
+        top: 6rem;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        left: -100%;
+        z-index: 10;
+    }
+    #menu:checked ~ ul{
+        left: 0px;
+    }
+    /* #menu:checked ~ .nav__bottom .menu-btn::before{
+        content: '\f00d';
+    } */
+    .nav__bottom .menu li{
+        margin: .8rem 0;
+        padding: 0;
+    }
+    .nav__bottom .menu li a{
+        font-size: 1.5rem;
+    }
+    #menu:checked ~ .menu li a{
+        margin-left: 0px;
+    }
+}

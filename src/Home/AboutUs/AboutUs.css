@@ -1,0 +1,55 @@
+.about__us{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 3rem 0;
+    margin-top: 5rem;
+}
+.about__us__left{
+    min-width: 70rem;
+    max-width: 70rem;
+    font-size: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem;
+}
+.about__us__left p{
+    text-align: left;
+    margin-top: 0.8rem;
+}
+.our__services{
+    display: flex;
+    margin-top: 3rem;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.about__us__left h2,
+.our__services h2,
+.about__us__right h2{
+    font-size: 3rem;
+    margin: 1rem 0;
+    color: #72A230;
+}
+.our__services a{
+    font-size: 1.7rem;
+    text-decoration: none;
+    color: #72A230;
+    margin-top: 0.2rem;
+}
+.about__us__right{
+    min-width: 50rem;
+    max-width: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.about__us__right img{
+    width: 100%;
+}
+
+.about__us__right p{
+    font-size: 1.5rem;
+    text-align: left;
+}
